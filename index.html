@@ -12,22 +12,28 @@
   <!--NAV-->
   <nav>
     <ul>
-      <li><a href="#me">공개 채팅</a></li>
+      <li><a href="#me">공개 채팅방</a></li>
       <li><a href="#skills">게시판</a></li>
-      <li><a href="#">이용 규칙</a></li>
+      <li><a onclick="fetchPage('rules')">이용 규칙</a></li>
       <li><a href="#">마이 페이지</a></li>
     </ul> 
   </nav> 
   </div> 
-</header>  
-<br>
-<br>
-<div style="border: 10px double;padding: 25px; margin-left: 60px; margin-right: 60px;">
-<div class="bwtitle">Hello world
+</header>
+<div style="border: 10px double; padding: 25px; margin-top: 30px; margin-left: 60px; margin-right: 60px;">
+<article>
+자유롭게 컴퓨터 지식을 공부하기 위한 인터넷 커뮤니티 입니다.<br>
+여러분들이 작성하신 글은 인터넷을 통해 누구나 열람 가능하고, 또한 어디서든 볼 수 있기 때문에 글을 쓰실때 항상 각별한 주의가 필요합니다.
+</article>
 </div>
-<span style="color: black;">:)</span>
-<br>
-<br>
-</div>
+<script>
+function fetchPage(name){
+fetch(name).then(function(response){
+	response.text().then(function(text){
+		document.querySelector('article').innerHTML = text;
+	})
+	 });
+}
+</script>
 </body>
 </html>
