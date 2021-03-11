@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+  body {
+     background-color: blue;
+   }
+
+  div {
+     background-color: white;
+}
+border {
+	5px double;
+} 
