@@ -7,20 +7,14 @@
   <script defer src="login-page.js"></script>
 </head>
 <body>
-  <main id="main-holder">
-    <h1 id="login-header">Login</h1>
-    
-    <div id="login-error-msg-holder">
-      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-    </div>
-    
+  <div style="width: 50%;">
+    <h1>로그인</h1>
     <form id="login-form">
-      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="text" name="ID" placeholder="아이디" style="margin-top: 30px; text-align:center;" >
+      <input type="password" name="password"  placeholder="비밀번호" style="margin-top: 20px; text-align:center;">
       <input type="submit" value="Login" id="login-form-submit">
     </form>
-  
-  </main>
+  </div>
 </body>
 
 </html>
