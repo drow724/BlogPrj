@@ -20,8 +20,8 @@
   </nav> 
   </div> 
 </header>
-<div style="border: 10px double; margin-left: 60px; margin-right: 60px; background-color: #d3d3d3;">
-<article style="margin:auto">
+<div style="border: 10px double; margin-left: 60px; margin-right: 60px; background-color: #d3d3d3; height: auto;">
+<article style="margin:auto; height: auto;">
 fetchPage('board.html')
 </article>
 </div>
@@ -33,25 +33,35 @@ fetch(name).then(function(response){
 	})
 	 });
 }
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+function dp_menu1(){
+    let click = document.getElementById("drop-content1");
+    if(click.style.display === "none"){
+        click.style.display = "block";
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+    }else{
+        click.style.display = "none";
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
     }
-  }
+}
+function dp_menu2(){
+    let click = document.getElementById("drop-content2");
+    if(click.style.display === "none"){
+        click.style.display = "block";
+
+    }else{
+        click.style.display = "none";
+
+    }
+}
+function dp_menu3(){
+    let click = document.getElementById("drop-content3");
+    if(click.style.display === "none"){
+        click.style.display = "block";
+
+    }else{
+        click.style.display = "none";
+
+    }
 }
 </script>
 </body>

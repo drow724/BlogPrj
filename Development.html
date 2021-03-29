@@ -8,54 +8,44 @@
 	<header>
 	<div style="border: 2px solid;  padding:15px; margin-top: 15px; margin-left: 100px; margin-right: 15px;"></div>
 <nav>
-  <div class="serchBar" style="border: 2px double;  padding:10px; margin-left: 100px; margin-right: 15px;  border-radius: 2em; background-color: white;">
+  <div class="serchBar" style="border: 2px double;  padding:10px; margin-left: 220px; margin-right: 10px;  border-radius: 2em; background-color: white;">
   주소창
   </div>
   <span style="float: left">
-<button type="button" id="" class="btn btnPrevious" style="position: absolute; left: 80px; top: 215px;">
+<button type="button" id="" class="btn" style="position: absolute; left: 80px; top: 215px; background-color: #1fe0; ">
 <img src="image\previous button.png" width=20px; height=20px; alt="btnImages" class="btnPreviousImage">
 </button>
-<button type="button" id="" class="btn btnNext" style="position: absolute; left: 130px; top: 215px;">
+<button type="button" id="" class="btn" style="position: absolute; left: 130px; top: 215px; background-color: #1fe0; ">
 <img src="image\next button.png" width=20px; height=20px; alt="btnImages" class="btnNextImage">
 </button>
 </span>
   </nav>
 </header>
 <article>
-<div style="border: 5px double; width:auto; height:auto; position: absolute; left: 85px; padding: 10px 65px 10px 10px;">
-<div id="myDropdown2" class="dropdown">
-<button id="myDropdown" onclick="myFunction()" class="dropbtn">DevColumn</button>
-  <div id="myDropdown1" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div>
+<div style="border: 5px double; width:auto; height:auto; position: absolute; left: 80px; padding: 10px 10px 10px 10px;">
 <div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">DevColumn</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div>
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">DevColumn</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div>
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">DevColumn</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div>
+        <button onclick="dp_menu1()" class="button">컴퓨터 기초 지식</button>
+        <div style="display: none;" id="drop-content1">
+            <a hreaf='#'>Column</a>
+            <a hreaf='#'>하드웨어</a>
+            <a hreaf='#'>인터넷</a>
+        </div>
     </div>
+   <div class="dropdown">
+        <button onclick="dp_menu2()" class="button">Java</button>
+        <div style="display: none;" id="drop-content2">
+            <a hreaf='#'>Column</a>
+            <a hreaf='#'>자바의 정석</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button onclick="dp_menu3()" class="button">Spring</button>
+        <div style="display: none;" id="drop-content3">
+            <a hreaf='#'>Column</a>
+            <a hreaf='#'>Spring Boot</a>
+        </div>
+    </div>
+</div>
     <div style="border: 5px double; width:auto; height:auto; margin-bottom:10px; margin-left:220px; margin-right:10px; margin-top:10px;">
     서블릿이란?(what is Servlet?)
     <br>
