@@ -22,16 +22,39 @@
   </nav>
 </header>
 <article>
-<div style="border: 5px double; width:auto; height:auto; position: absolute; left: 90px;">
-<ul style="padding: 10px 10px 10px 10px; ">
-      <a onclick="">DevColumn</a></li>
-      <br>
-      <a onclick="">컴퓨터 기초 지식</a></li>
-      <br>
-      <a onclick="">Java</a></li>
-      <br>
-      <a onclick="">Spring Framework</a></li>
-    </ul> 
+<div style="border: 5px double; width:auto; height:auto; position: absolute; left: 85px; padding: 10px 65px 10px 10px;">
+<div id="myDropdown2" class="dropdown">
+<button id="myDropdown" onclick="myFunction()" class="dropbtn">DevColumn</button>
+  <div id="myDropdown1" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">DevColumn</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">DevColumn</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">DevColumn</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
     </div>
     <div style="border: 5px double; width:auto; height:auto; margin-bottom:10px; margin-left:220px; margin-right:10px; margin-top:10px;">
     서블릿이란?(what is Servlet?)
@@ -60,5 +83,6 @@ JSP는 Java소스로 사용하여 웹페이지에 접근하고 페이지 전환�
     
     </div>
 </article>
+
 </body>
 </html>

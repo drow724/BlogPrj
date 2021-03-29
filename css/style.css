@@ -52,3 +52,42 @@ nav h2{
 #loginform {
 	height: auto;
 }
+.dropbtn {
+	font-family: 'DOSMyungjo';
+    background-color: #1fe0; 
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+     display: block;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #1fe0;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1fe0;
+
+    overflow: auto;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #1fe0}
+
+.show {display:block;}
+
+.up {margin-bottom: auto;}
