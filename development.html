@@ -9,7 +9,7 @@
 	 <div id="navbar" style="margin-bottom: 27px;">
   <div id="holder"> 
   <ul> 
-   <li><a href="#" id="onlink">Home</a></li>
+   <li style="cursor:pointer"><a href="#" id="onlink">Home</a></li>
   </ul> 
   </div> <!-- end holder div --> 
  </div> <!-- end navbar div -->
@@ -31,20 +31,20 @@
 <div style="border: 5px double; width:auto; height:auto; position: absolute; left: 80px; padding: 10px 10px 10px 10px; margin-top: 10px; background-color: white;">
 <div class="dropdown">
         <button onclick="dp_menu1()" class="button">컴퓨터 기초 지식</button>
-        <div style="display: none;" id="drop-content1">
+        <div style="display: none; cursor:pointer" id="drop-content1">
             <a onclick="fetchBoard('Board/Computer/Column/column.html')">컴퓨터 지식 칼럼</a>
             <a onclick="fetchBoard('Board/Computer/Hardware/hardware.html')">하드웨어</a>
             <a onclick="fetchBoard('Board/Computer/Internet/internet.html')">인터넷</a>
         </div>
     </div>
-   <div class="dropdown">
+   <div class="dropdown" style="cursor:pointer">
         <button onclick="dp_menu2()" class="button">Java</button>
         <div style="display: none;" id="drop-content2">
             <a onclick="fetchBoard('Board/Java/Column/column.html')">자바 칼럼</a>
             <a onclick="fetchBoard('Board/Java/JavaStandard/javastandard.html')">자바의 정석</a>
         </div>
     </div>
-    <div class="dropdown">
+    <div class="dropdown" style="cursor:pointer">
         <button onclick="dp_menu3()" class="button">Spring</button>
         <div style="display: none;" id="drop-content3">
             <a onclick="fetchBoard('Board/Spring/Column/column.html')">스프링 칼럼</a>
