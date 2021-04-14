@@ -8,21 +8,23 @@
 </head>
 <body>
 <header>
-<div class="index-header">
+<div style="border: 10px double; margin-top: 50px; margin-left: 150px; margin-right: 150px; background-color: #dcdcdc;">
   <!--NAV-->
   <nav>
-      <button class="button" style="cursor:pointer; font-size: 1em; padding: 20px 20px 20px 20px; font-size: 3em;" onclick="fetchPage('development.html')">송재근의 개발일지</button>
+      <button class="button" style="cursor:pointer; font-size: 1em; padding: 20px 20px 20px 20px; font-size: 3em;" onclick="fetchPage('development.html')">Development</button>
+      <button class="button" style="cursor:pointer; font-size: 1em; padding: 20px 20px 20px 10px; font-size: 3em;" onclick="fetchPage('social.html')">Social Media</button>
+      <button class="button" style="cursor:pointer; font-size: 1em; padding: 20px 20px 20px 10px; font-size: 3em;" onclick="fetchPage('dailyLife.html')">Daily Life</button>
+      <button class="button" style="cursor:pointer; font-size: 1em; padding: 20px 10px 20px 20px; font-size: 3em;" onclick="fetchPage('aboutMe.html')">About me</button>
   </nav> 
   </div> 
 </header>
-<div class="index-board">
-<article class="index-article">
-<h1 style="font-size: 5.0em; text-align: center">아직 공사중입니다ㅠㅠ</h1>
-<img src="image\cat.png" alt="catImages" class="catImage" style="float:center; display: block; margin: 0px auto; height: 1000px;">
+<div style="border: 10px double; margin-left: 150px; margin-right: 150px; margin-top: 50px;background-color: #d3d3d3; height: auto;">
+<article style="margin:auto; height: auto;">
+<h1 style="text-align: center">아직 공사중입니다ㅠㅠ</h1>
+<img src="image\cat.png" alt="catImages" class="catImage" style="float:center; display: block; margin: 0px auto; height: 500px;">
 </article>
 </div>
 <script>
-
 function fetchPage(name){
 fetch(name).then(function(response){
 	response.text().then(function(text){
