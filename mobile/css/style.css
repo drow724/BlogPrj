@@ -189,7 +189,9 @@ nav h2{
 a:active{border:1px;}
 
 div.index-header{
-	margin: 1%;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
 	padding-top:5%;
 	padding-bottom:5%;
 	font-size: 2.0em;
@@ -199,9 +201,9 @@ div.index-header{
 
 div.index-board{
 	margin-top: 5%;
-	margin-bottom: 1%;
-	margin-left: 1%;
-	margin-right: 1%;
+	margin-bottom: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
 	border: 10px double;
 	background-color: #d3d3d3;
 	height: 100vh;
@@ -228,5 +230,5 @@ section.dev-sec{
 	height:100vh;
 	margin:1%;
 	background-color: white;
-	padding:100px 200px 100px 200px;
+	padding-top: 5%
 }
